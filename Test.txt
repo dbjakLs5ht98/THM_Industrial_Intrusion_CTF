@@ -1,5 +1,14 @@
 printf "\x54\x76\x10\x32\xdc\xfe\x98\xba" | ./auth
 
+http://10.10.138.237:9005/ba98fedc32107654
+http://10.10.138.237:9005/ba98fedc32107654
+http://10.10.138.237:9005/5476103298fedcba
+
+
+
+
+--------
+
 unlock code:
 ba98fedc32107654
 
