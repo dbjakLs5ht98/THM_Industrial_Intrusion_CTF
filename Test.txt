@@ -1,0 +1,1 @@
+XORed_input = ba98fedc32107654
