@@ -1,3 +1,1 @@
-XORed_input = ba98fedc32107654
-
 printf "\x54\x76\x10\x32\xdc\xfe\x98\xba" | ./auth
