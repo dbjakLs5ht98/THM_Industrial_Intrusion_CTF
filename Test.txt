@@ -1,1 +1,31 @@
 printf "\x54\x76\x10\x32\xdc\xfe\x98\xba" | ./auth
+
+unlock code:
+ba98fedc32107654
+
+For bytecode
+\xba\x98\xfe\xdc\x32\x10\x76\x54
+
+For URL
+%ba%98%fe%dc%32%10%76%54
+
+To base64
+```
+import base64
+unlock_code = b'\xba\x98\xfe\xdc\x32\x10\x76\x54'
+base64_code = base64.b64encode(unlock_code).decode()
+print(base64_code)  # This would give you: upj+3DIQV1Q=
+```
+ba98fedc32107654
+
+
+http://10.10.138.237:9005/?code=ba98fedc32107654
+http://10.10.138.237:9005/?unlock=ba98fedc32107654
+http://10.10.138.237:9005/?key=ba98fedc32107654
+http://10.10.138.237:9005/?auth=ba98fedc32107654
+http://10.10.138.237:9005/ba98fedc32107654
+curl -H "Authorization: ba98fedc32107654" http://10.10.138.237:9005
+curl -H "X-Auth-Code: ba98fedc32107654" http://10.10.138.237:9005
+curl -X POST -d "code=ba98fedc32107654" http://10.10.138.237:9005
+http://10.10.138.237:9005/?code=ba98fedc32107654
+
